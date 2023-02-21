@@ -43,7 +43,7 @@ class MK_SPRITES_OP_export_image_json(bpy.types.Operator):
                 item["frames"] = get_action_frame_count(action_obj.action)
                 item["framerate"] = context.scene.render.fps
                 item["loop"] = True
-                item["name"] = action_obj.action.name
+                item["name"] = action_obj.action.name + "_" + str(obj_rot)
                 item["width"] = mk_render_props.resolution_x
                 item["height"] = mk_render_props.resolution_y
                 posX, posY = GetTilePos(mk_render_props.resolution_x, mk_render_props.resolution_y, image_width, image_height, n)
@@ -103,7 +103,7 @@ class MK_SPRITES_OP_export_image_xml(bpy.types.Operator):
                 xml.SubElement(item, "frames").text = str(get_action_frame_count(action_obj.action))
                 xml.SubElement(item, "framerate").text = str(context.scene.render.fps)
                 xml.SubElement(item, "loop").text = "True"
-                xml.SubElement(item, "name").text = action_obj.action.name
+                xml.SubElement(item, "name").text = action_obj.action.name + "_" + str(obj_rot)
 
                 width = mk_render_props.resolution_x
                 height = mk_render_props.resolution_y
