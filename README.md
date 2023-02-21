@@ -1,6 +1,8 @@
 ![Header](https://user-images.githubusercontent.com/8345043/220414814-f4e8f789-e1af-4599-b9f4-6761ae3a7551.png)
 
-## The Sprite Atlas Addon for Blender allows users to render objects to a sprite sheet that can be used for 2D animations.
+### The Sprite Atlas Addon for Blender allows users to render animated objects to a sprite sheet. The textures and animation data can then be exported for use in other 2D software.
+
+This addon was originally built to render 3d models to textures that can later be used in 2d game engines to create a pseudo 3D effect. A prime example would be factorio. 
 
 # Animate
 Specify animations that will be rendered in sequence and automatically tiled onto the sprite sheet.
